@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no,telephone=no">
+  <title>九月不撸</title>
+  <style>
+    .link-btn {
+      cursor: pointer;
+      display: inline-block;
+      width: 30%;
+      position: absolute;
+      left:35%;
+      top:62%;
+    }
+    .link-btn1 {
+      cursor: pointer;
+      display: inline-block;
+      width: 48%;
+      position: absolute;
+      left:25%;
+      top:78.7%;
+    }
+    .video-btn {
+      cursor: pointer;
+      display: inline-block;
+      width: 50%; 
+      position: absolute;
+      left:25%;
+      top:16.5%;
+    }
+    .middle {
+      position: relative;
+    }
+    .question {
+      display: inline-block;
+      color: red;
+      width: 100%; 
+      position: absolute;
+      top:25%;
+    }
+    p{
+      font-size: 18px;
+      margin: 5px 30px;
+      padding: 10px;
+      text-align: left;
+    }
+    span{
+      font-size: 16px;
+      margin: 0px 0px;
+      padding: 0px;
+      text-align: left;    display: block;
+      -webkit-margin-before: 1em;
+      -webkit-margin-after: 1em;
+      -webkit-margin-start: 0px;
+      -webkit-margin-end: 0px;
+      color: #333333;
+    }
+    img {
+      width: 100%;
+    }
+    body{
+      margin:0;
+      padding:0;  
+    }
+    .image1 {
+      position: absolute;
+      left:5%;
+      top:10%;
+    }
+    a{ text-decoration:none;
+      color: white;
+    }
+    a,img,button,input,textarea，p{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+  </style>
+  <script type="text/javascript" src="https://pages.baozoumanhua.com/unify/assets/plugins/jquery/jquery.min.js"></script>
+</head>  
+<body>
+  <div class="middle">
+    <a class="image1" href="/pages/page1.html">
+      <p style="margin: 0px;padding: 0px;">重新测试</p>
+    </a>
+    <div class="question">
+     <span id="title" style="text-align: center;background: url(https://rednose.b0.upaiyun.com/uploads/image/201708/ee4471f0260c.png);width: 50%;margin: 0px;margin-left: 25%;padding:10px 0px; font-size: 18px;">好人侠 张全蛋</span>
+     <span id="des1" style="margin-left: 40px;margin-right: 40px;margin-top: 10px;margin-bottom:  0px;"></span>
+     <span id="des2" style="margin-left: 40px;margin-right: 40px;margin-top: 0px;margin-bottom:  0px;"></span>
+     <span id="des3" style="margin-left: 40px;margin-right: 40px;margin-top: 0px;margin-bottom:  0px;"></span>
+     <span id="des4" style="margin-left: 40px;margin-right: 40px;margin-top: 0px;margin-bottom:  0px;"></span>
+     <span id="des5" style="margin-left: 40px;margin-right: 40px;margin-top: 10px;margin-bottom:  0px;"></span>
+   </div>
+   <img class="video-btn"  src="https://rednose.b0.upaiyun.com/uploads/image/201708/40c0e989bc34.png" alt="九月不撸">
+   <img class="link-btn"  src="https://rednose.b0.upaiyun.com/uploads/image/201708/4ec674a04c9b.png" alt="九月不撸">
+   <img class="link-btn1" src="https://rednose.b0.upaiyun.com/uploads/image/201708/54a8651ba772.png" alt="九月不撸">
+   <img src="https://rednose.b0.upaiyun.com/uploads/image/201708/1c89710e2718.png" alt="九月不撸">
+ </div>
+</body>
+</html>
+<script type="text/javascript">
+  var url=window.location.href;
+  var d=url.split("?")[1].split("=")[1];
+  var a;
+  if (d=="1") {a=4;}
+  else if (d=="2"){a=0;}
+  else if (d=="3"){a=7;}
+  else if (d=="4"){a=4;}
+  else if (d=="5"){a=10;}
+        //添加key-value 数据到 sessionStorage
+        // sessionStorage.setItem("question5",d);
+        //通过key来获取value
+        var dt1 = sessionStorage.getItem("question1");
+        var dt2 = sessionStorage.getItem("question2");
+        var dt3 = sessionStorage.getItem("question3");
+        var dt4 = sessionStorage.getItem("question4");
+        var b=parseInt(dt1)+parseInt(dt2)+parseInt(dt3)+parseInt(dt4)+parseInt(a);
+        //清空所有的key-value数据。
+        //sessionStorage.clear();
+        if (b<21) { $("#title").text("哈哈党 大队长");$("#des1").text("“哈哈哈哈哈笑尿了”");
+        $("#des2").text("笑着笑着就痛了。");
+        $("#des3").text("独自，蛋疼。");
+        $("#des4").text("长得好看也得多读书，秀点深度");
+      }else if (b<24){$("#title").text("飙车族 王尼美");
+      $("#des1").text("“来啊，互相伤害啊”");
+      $("#des2").text("深夜无人独开车，黯然失魂老司机。");
+      $("#des3").text("身体和灵魂能有一个在路上。");
+      $("#des4").text("口污，身怂。");
+      $("#des5").text("谁还不是小公举了咋滴？高雅一点好咯 ");
+    }else if (b<27){$("#title").text("好人侠 张全蛋");
+    $("#des1").text("“对不起，其实你是一个好人……”");
+    $("#des2").text("付出往往没回报，痴情总被无情伤。");
+    $("#des3").text("人缘好不代表桃花旺。 ");
+    $("#des4").text("十动，然拒。 ");
+    $("#des5").text("温柔只是你的保护色，来点野劲吧 ");
+  }else if (b<30){
+    $("#title").text("偶像派 木子");
+    $("#des1").text("“你这样让我很尴尬啊” ");
+    $("#des2").text("精致生活一百分，自带护甲30000点。 ");
+    $("#des3").text("有人欣赏没人靠近。 ");
+    $("#des4").text("保持，微笑。 ");
+    $("#des5").text("多吃点土，可能就接地气了");
+  }else{
+    $("#title").text("温拿团 纸巾");
+    $("#des1").text("“如果还有我不懂的学问,那就是女孩子” ");
+    $("#des2").text("知书达礼不领情，通今博古不懂爱。 ");
+    $("#des3").text("不做感情的奴隶却成了事业的婢仆。 ");
+    $("#des4").text("严肃，紧张。 ");
+    $("#des5").text("今天不加班了，放松一下 ");}
+        // sessionStorage.clear();
+      </script>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head> 
+ <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no,telephone=no"> 
+ <title>九月不撸问题3</title>
+ <style>
+  .link-btn {
+      cursor: pointer;
+      display: inline-block;
+      width: 28%;
+      position: absolute;
+      left:72%;
+      top:70%;
+    }
+    .link-btn1 {
+      cursor: pointer;
+      display: inline-block;
+      width: 38%;
+      position: absolute;
+      left:32%;
+      top:76.7%;
+    }
+    .image1 {
+      font-size: 22px;
+      margin: 0px;
+      padding: 0px;  
+      position: absolute;
+      left:5%;
+      top:14.5%;
+      border: none;
+    }
+    .image2 {
+      cursor: pointer;
+      display: inline-block;
+      width: 7%;
+      height: 7px;  
+      position: absolute;
+      left:5%;
+      top:18.5%;
+    }
+    .question {
+      display: inline-block;
+      width: 100%; 
+      position: absolute;
+      top:20%;
+    }
+    p{
+      color: #333333;
+      font-size: 16px;
+      margin: 5px 30px;
+      padding: 5px;
+      text-align: left;
+      border: 1px solid #333333;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  .middle {
+    position: relative;
+  }
+  img {
+    width: 100%;
+  }
+  body{
+    margin:0;
+    padding:0;  
+  }
+  a{ text-decoration:none;
+  } 
+  a,img,button,input,textarea，p{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+</style>
+<script type="text/javascript" src="https://pages.baozoumanhua.com/unify/assets/plugins/jquery/jquery.min.js"></script>
+</head>  
+<body>
+  <div class="middle">
+    <p class="image1">3/5</p>
+    <img class="image2"  src="https://rednose.b0.upaiyun.com/uploads/image/201708/d7857b9c2689.png" alt="九月不撸">
+    <div class="question">
+      <p id="title">原来是快递的电话，告诉你快递已经留在了酒店前台，你感觉这份快递是什么？</p>
+      <a href="/pages/page5.html?number=1">
+        <p>A.自己淘宝的坚果（XXX食品品牌广告植入）</p>
+      </a>
+      <a href="/pages/page5.html?number=2">
+        <p>B.经纪人寄来的演出合同</p>
+      </a>
+      <a href="/pages/page5.html?number=3">
+        <p>C.某个追求者送来的花</p>
+      </a>
+      <a href="/pages/page5.html?number=4">
+        <p>D.可能是炸弹</p>
+      </a>
+      <a href="/pages/page5.html?number=5">
+        <p>E.朋友送的生日礼物</p>
+      </a>
+    </div>
+    <img class="link-btn1"  src="https://rednose.b0.upaiyun.com/uploads/image/201708/333845c31ce0.png" alt="九月不撸">
+    <img class="link-btn"  src="https://rednose.b0.upaiyun.com/uploads/image/201708/dfe95908ee90.png" alt="九月不撸">
+    <img src="https://rednose.b0.upaiyun.com/uploads/image/201708/82e018c1a69b.png" alt="九月不撸">
+  </div>
+</body>
+</html><script type="text/javascript">
+var url=window.location.href;
+var d=url.split("?")[1].split("=")[1];
+if (d=="1") {sessionStorage.setItem("question2",8);}
+else if (d=="2"){sessionStorage.setItem("question2",7);}
+else if (d=="3"){sessionStorage.setItem("question2",3);}
+else if (d=="4"){sessionStorage.setItem("question2",5);}
+else if (d=="5"){sessionStorage.setItem("question2",2);}
+var p=document.getElementsByTagName('p');
+for(var i=0;i<p.length;i++){
+  (function(i){
+    p[i].onclick=function(){
+      if (p[i].id!="title") {
+        p[i].style.background="#ffad44";
+        p[i].style.color="white";
+        for(var j=0;j<p.length;j++){
+            if (j!=i) {
+              p[j].style.background="white";
+              p[j].style.color="#333333";
+            }
+          }
+      }
+    }
+  })(i)
+}
+</script>
